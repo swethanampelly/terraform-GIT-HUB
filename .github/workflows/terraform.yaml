@@ -5,8 +5,8 @@ on :
   branches:
      -main
  pull_request:
-
- jobs:
+ 
+jobs:
   terraform:
    runs-on: ubuntu-latest
    env:
@@ -31,4 +31,4 @@ on :
 
     - name: Terraform Apply
       if: github.ref == 'refs/heads/main'
-      run: terraform apply 
+      run: terraform apply -auto-approve
