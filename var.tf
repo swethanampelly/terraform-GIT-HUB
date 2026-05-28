@@ -3,6 +3,6 @@ variable "type" {
 }
 
 variable "image" {
-    description = "value of the ami"
-  
+  description = "value of the ami"
+
 }
